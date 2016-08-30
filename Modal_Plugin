@@ -30,7 +30,7 @@ var data = {
  $.ajax({ 
   type: "POST", 
   dataType: "json", 
-  url:"/API_call.php", //Relative or absolute path to response.php file 
+  url:"<?php echo plugins_url(); ?>/Modal_Plugin/API_call.php", //Relative or absolute path to response.php file 
   data: data, 
  success: function(data) { 
  $(".the-price").html( 
